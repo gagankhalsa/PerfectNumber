@@ -9,7 +9,10 @@ public class Remove_vowels {
         Scanner sc=new Scanner(System.in);
         System.out.println("enter a string");
         String str =sc.nextLine();
+        int a=str.length();
         String strnew=str.replaceAll("[aeiouAEIOU]", "");
+        int b=strnew.length();
         System.out.println(strnew);
+        System.out.println("total vowles are:" +(a-b));
     }
 }
